@@ -74,10 +74,12 @@ section {
 
 #maincontent {
 	background-color: #f3f3f3;
+	width: 100%;
 	min-height: 100%;
 }
 
 #footer {
+	width: 100%;
 	background-color: #444;
 	color: #aaa;
 	font-size: 0.8rem;
@@ -86,6 +88,23 @@ section {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+/*-----------------General Styles------------------*/
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+}
+
+.filter-container {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
 
 /* ====================== Navigation ====================== */
 nav {
@@ -148,19 +167,27 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Filtering ====================== */
+
+#filter {
+	margin-top: 5px;
+	border: 2px solid white;
+}
+
 .filter-options {
 	width: 100%;
-	height: 50px;
+	height: 90px;
 	background-color: #3397DB;
 	align-items: center;
 }
 
 .filter-options h2 {
 	color: white;
-	font-size: 1rem;
-	font-weight: normal;
-	line-height: 1;
-	margin: 0 20px;
+	font-size: 1.2rem;
+	font-weight: lighter;
+	margin: 0 0 0 10px;
+	display: inline-block;
+	padding-top: 10px;
+
 }
 
 .filter-options select {
@@ -180,7 +207,6 @@ nav h1 a {
 	background-color: #f3f3f3;
 	list-style: outside none none;
 	margin: 0;
-	padding: 30px 15px 60px;
 	text-align: center;
 }
 
@@ -190,7 +216,7 @@ nav h1 a {
 	font-family: Arial, sans-serif;
 	margin: 15px;
 	min-height: 380px;
-	padding: 0 30px 25px;
+	padding: 20px;
 	text-align: left;
 	width: 270px;
 }
