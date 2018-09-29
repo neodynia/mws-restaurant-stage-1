@@ -89,7 +89,7 @@ section {
 	text-transform: uppercase;
 }
 
-/*-----------------General Styles------------------*/
+/*-----------------Containers/Flexs/Grids------------------*/
 
 .container {
 	width: 100%;
@@ -103,10 +103,40 @@ section {
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: center;
 }
 
 
+@media screen and (min-width: 650px) {
+	#restaurants-list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+	#restaurants-list {
+
+		grid-template-columns: repeat(3, 1fr);
+
+	}
+
+	@media screen and (min-width: 1200px) {
+		#restaurants-list {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+}
+
 /* ====================== Navigation ====================== */
+header {
+	width: 100%;
+}
+
 nav {
 	width: 100%;
 	height: 8.0rem;
@@ -115,7 +145,7 @@ nav {
 }
 
 nav h1 {
-	margin: auto;
+	margin: 0 auto;
 }
 
 nav h1 a {
@@ -174,6 +204,8 @@ nav h1 a {
 }
 
 .filter-options {
+	display: flex;
+	flex-flow: column nowrap;
 	width: 100%;
 	height: 90px;
 	background-color: #3397DB;
@@ -206,8 +238,7 @@ nav h1 a {
 #restaurants-list {
 	background-color: #f3f3f3;
 	list-style: outside none none;
-	margin: 0;
-	text-align: center;
+
 }
 
 #restaurants-list li {
