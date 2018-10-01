@@ -209,3 +209,14 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+/**
+ * Add Tab Index To List Items
+ */
+
+let listItem = document.querySelectorAll('li');
+listItem.forEach(function(item) {
+  item.setAttribute("tabindex", "0");
+});
+
+
+
