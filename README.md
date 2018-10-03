@@ -1,32 +1,69 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews Project
 
-## Project Overview: Stage 1
+## Table of Contents
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
+* [About](#about)
+* [Instructions](#instructions)
+* [Dependencies](#dependencies)
+* [Contributing](#contributing)
+* [License](#license)
+* [Questions](#questions)
 
-### Specification
+## About
 
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
+### Author
 
-### What do I do from here?
+* Ryan Boris [rbwebdev@icloud.com](rbwebdev@icloud.com)
+* Student at Udacity
+* Program: Front End Web Development Nanodegree
 
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
+### Project
 
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+Project for Unit 4 - Required for successful completion of the Front End Nanodegree at Udacity.  The project is a web application that incorporates the Leaflet map API in order to create a restaurant guide of the greater New York City area complete with business information, customer reviews, and hours of operation.  The goal of the project was to take a starter design an incorporate aspects of responsive design, CSS grids, ARIA best practices, and implementation of a service worker that would cache page elements for users to view offline at a later time, or provide a seamless experience for users that might be encountering temporary moments of decreases network connectivity/bandwith.
 
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
+## Instructions
 
-## Leaflet.js and Mapbox:
+You may check out the browser-based rendition of this project at [githubpage](https://neodynia.github.io/mws-restaurant-stage-1)
 
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
+Greetings!
+This project is a requirement for the Front End (web Development) Nanodegree offered by Udacity, in partnership with Google and their Grow with Google Program.
 
-### Note about ES6
+### Serving the Project Locally
 
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+In order to serve the project locally, please complete each of the following steps:
 
+1. Clone the project to your local machine.
 
+2. `cd` into the root of the project.
 
+3. In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+
+4. Navigate to [http://localhost:8000](http://localhost:8000) to view the web application.
+
+Alternatively, you may serve the project as you wish using the server-side rendering present in the file `dbhelper.js`.
+
+### Access the Project via GitHub Pages
+
+Also, the application is served via GitHub Pages and can be accessed at [githubpage](https://neodynia.github.io/fend-project-memory-game)
+
+## Dependencies
+
+* [Python](https://www.python.org)
+* [Google Fonts](https://fonts.google.com/)
+* [leafletjs API](https://leafletjs.com)
+* [MapBox](https://www.mapbox.com)
+
+## Contributing
+
+Although this may seem like a simple project at first, there are many considerations and modifications that one can easily get lost in, especially when you consider the fine and subtle nuances. I encourage constructive advice and refactoring. In order to provide that, I would ask you to fork this repository and sumbmit any modifications you would like bring to my attention on a branch with a name that is indicative of the general theme or type of modification you wish to make. Then, submit a pull request and I will gladly review!
+
+## License
+
+Project is originally forked from and created by Udacity and provided as part of their Front End Nanodegree program.
+[Original Repo](https://github.com/udacity/fend-project-memory-game)
+
+## Questions
+
+Please feel free to contact me via rbwebdev@icloud.com or submit comments here on Github.
+
+Happy Coding!
